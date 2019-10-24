@@ -13,12 +13,16 @@ before_install:
 
 script:
 
-  - ./gradlew clean build
+  - gradle clean build
 
-after_success: echo Build successful
+after_success:
+  - echo Build successful
 
-after failure: sudo mail -s "Build failure" ghiselli.nicola@gmail.com < /dev/null
+after failure:
+  - sudo mail -s "Build failure" ghiselli.nicola@gmail.com < /dev/null
 
-before_deploy: echo Preparing for deploy
+before_deploy:
+  - echo Preparing for deploy
 
-after_deploy: echo Deployment phase concluded.
+after_deploy:
+  - echo Deployment phase concluded.
