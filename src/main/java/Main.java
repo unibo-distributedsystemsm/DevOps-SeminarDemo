@@ -7,5 +7,7 @@ public class Main {
         System.out.println("Hello Travis, please work!");
 
 	System.out.println("Master branch!");
+
+	System.out.println("Branch Test!");
     }
 }
