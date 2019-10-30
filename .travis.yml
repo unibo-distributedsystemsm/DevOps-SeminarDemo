@@ -14,9 +14,12 @@ before_install:
 script:
 
   - gradle clean build
+  - gradle test
+  - gradle jar
 
 after_success:
   - echo Build successful
+  - java -jar build/libs/travis-demo-1.0-SNAPSHOT.jar
 
 after failure:
   - sudo mail -s "Build failure" ghiselli.nicola@gmail.com < /dev/null
