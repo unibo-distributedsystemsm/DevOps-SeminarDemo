@@ -8,6 +8,6 @@ public class Main {
 
 	System.out.println("Master branch!");
 
-	System.out.println("Branch Test!");
+        System.out.println("DEMO!");
     }
 }
