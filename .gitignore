@@ -19,6 +19,8 @@
 *.rar
 *.tar
 *.zip
+*.ear
+*.war
 
 # Logs and databases #
 ######################
@@ -46,13 +48,7 @@ Thumbs.db
 
 ### Java-Web ###
 ## ignoring target file
-*/target/
-*/out/
-
-##
-build/
-
-##
+target/
+out/
 .idea/
-#.gradle/
-#gradle/
+build/
